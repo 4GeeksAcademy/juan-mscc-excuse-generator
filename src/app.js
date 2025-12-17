@@ -12,16 +12,8 @@ let when = ['five seconds ago', 'when I was at the gym', 'while i was taking a n
 
 window.onload = function() {
   //write your code here
-  let excuse = who[Math.floor(Math.random() * 4)] + ' ' + action[Math.floor(Math.random() * 4)] + ' ' + what[Math.floor(Math.random() * 3)] + ' ' + when[Math.floor(Math.random() * 5)];
+  let excuse = who[Math.floor(Math.random() * who.length)] + ' ' + action[Math.floor(Math.random() * action.length)] + ' ' + what[Math.floor(Math.random() * what.length)] + ' ' + when[Math.floor(Math.random() * when.length)];
   console.log(excuse)
-  const originalElement = this.document.getElementById('excuse');
 
-  const newElement = this.document.createElement('p');
-
-  newElement.innerHTML = excuse;
-
-  if(originalElement){
-    originalElement.replaceWith(newElement)
-  }
-  console.log("Hello Rigo from the console!");
+  document.querySelector("#excuse").innerHTML = excuse;
 };
