@@ -2,4 +2,17 @@
 
 body{
     background: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    width: fit-content;
+    margin: auto;
+}
+
+p {
+    color: rgb(1, 1, 65);
 }
