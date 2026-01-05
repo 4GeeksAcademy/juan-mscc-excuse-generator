@@ -13,7 +13,7 @@ let when = ['five seconds ago', 'when I was at the gym', 'while i was taking a n
 
 let phrase = [who, action, what, when]
 
-const select = (array) => array[Math.floor(Math.random() * array.length)];
+const selectRandomElement = (array) => array[Math.floor(Math.random() * array.length)]; // This function selects a random element from a given array
 
 
 window.onload = function() {
@@ -21,7 +21,7 @@ window.onload = function() {
   document.getElementById('title').innerHTML = 'Hola!'
   let excuse = ''
   for (let i = 0; i < phrase.length; i++){
-    excuse = excuse + ' ' + select(phrase[i])
+    excuse = excuse + ' ' + selectRandomElement(phrase[i])
   }
   console.log(excuse)
 
